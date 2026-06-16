@@ -53,3 +53,51 @@ console.log(typeof edadUsuario);
 
 // Pregúntate: ¿por qué el tipo no es "number"?
 // Porque prompt() siempre va a devolver un string.
+
+
+
+// 3.1 Operadores Aritméticos
+// --- Operadores aritméticos ---
+let a = 20;
+let b = 7;
+
+console.log('Suma:', a + b);        // 27
+console.log('Resta:', a - b);       // 13
+// Completa las 3 operaciones que faltan:
+// - Multiplicación (usa *)
+console.log('Multiplicación: ', a * b);
+
+// - División (usa /)
+console.log('División: ', a / b);
+
+// - Módulo (usa % — devuelve el residuo de la división)
+console.log('Módulo: ', a % b);
+
+
+// 3.2 Cuidado con los Strings y Números
+// --- ¿Qué resultado esperas? ---
+console.log('5' + 3);    // ¿53 o 8? '53'
+console.log(5 + 3);      // ¿53 o 8? 8
+console.log('5' - 3);    // ¿Qué pasa aquí? 2
+
+
+// 3.3 Concatenación vs Template Literals
+// Forma 1: Concatenación con +
+let saludo1 = 'Hola ' + nombreUsuario + ', tienes ' + edadUsuario + ' años.';
+console.log(saludo1);
+
+// Forma 2: Template literals con `` (backticks)
+// Escribe el mismo saludo usando backticks (`) y ${variable}
+let saludo2 = `Hola ${nombreUsuario}, tienes ${edadUsuario} años.`
+console.log(saludo2);
+
+
+// 3.4 Aplica lo Aprendido
+// --- Calculadora de edad ---
+let anioActual = 2026;
+let anioNacimiento = anioActual - Number(edadUsuario);
+
+// Completa el mensaje usando template literals:
+// Debe decir: "Hola [nombre], naciste aproximadamente en [año]"
+let saludo3 = `Hola ${nombreUsuario}, naciste aproximadamente en ${anioNacimiento}`;
+console.log(saludo3);
